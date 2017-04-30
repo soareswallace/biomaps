@@ -23,6 +23,9 @@ class mapViewController: UIViewController, CLLocationManagerDelegate {
         map.setRegion(region, animated: true)
         
         self.map.showsUserLocation = true
+        
+        
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +37,25 @@ class mapViewController: UIViewController, CLLocationManagerDelegate {
         let siteURL = URL(string: "https://en.wikipedia.org/wiki/Short-billed_dowitcher")
         let siteURLRequest = URLRequest(url: siteURL!)
         webView.loadRequest(siteURLRequest)
+        
+        let span2:MKCoordinateSpan = MKCoordinateSpanMake(0.1, 0.1)
+        let location2: CLLocationCoordinate2D = CLLocationCoordinate2DMake(-8.060642, -34.870370)
+        let region2:MKCoordinateRegion = MKCoordinateRegionMake(location2, span2)
+        map.setRegion(region2, animated: true)
+        
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location2
+        map.addAnnotation(annotation)
+        
+        let span3:MKCoordinateSpan = MKCoordinateSpanMake(0.1, 0.1)
+        let location3: CLLocationCoordinate2D = CLLocationCoordinate2DMake(-8.063446, -34.871422)
+        let region3:MKCoordinateRegion = MKCoordinateRegionMake(location3, span3)
+        map.setRegion(region3, animated: true)
+        
+        let annotation2 = MKPointAnnotation()
+        annotation2.coordinate = location3
+        map.addAnnotation(annotation2)
+        
         
         
         isAuthorizedtoGetUserLocation()

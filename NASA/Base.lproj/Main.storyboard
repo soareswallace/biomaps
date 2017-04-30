@@ -47,7 +47,7 @@
                                 <rect key="frame" x="16" y="28" width="73" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="&lt; Back"/>
                                 <connections>
                                     <segue destination="p2a-9d-Nav" kind="show" id="JBI-Vd-fEC"/>
                                 </connections>
@@ -192,7 +192,7 @@
                                 <rect key="frame" x="16" y="28" width="73" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="&lt; Back"/>
                                 <connections>
                                     <segue destination="p2a-9d-Nav" kind="show" id="8Au-zX-UhX"/>
                                 </connections>
@@ -219,7 +219,7 @@
         <image name="logo" width="247" height="229"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JBI-Vd-fEC"/>
-        <segue reference="K27-9T-YKA"/>
+        <segue reference="nuE-bf-Mq8"/>
+        <segue reference="AZh-Xk-isK"/>
     </inferredMetricsTieBreakers>
 </document>
