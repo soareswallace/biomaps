@@ -12,6 +12,9 @@
 		BAC8A9CE1EB53970005270DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC8A9CC1EB53970005270DD /* Main.storyboard */; };
 		BAC8A9D01EB53970005270DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC8A9CF1EB53970005270DD /* Assets.xcassets */; };
 		BAC8A9D31EB53970005270DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC8A9D11EB53970005270DD /* LaunchScreen.storyboard */; };
+		BAC8A9DE1EB5868E005270DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC8A9DD1EB5868E005270DD /* CoreLocation.framework */; };
+		BAC8A9E41EB58CFC005270DD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC8A9E31EB58CFC005270DD /* MapKit.framework */; };
+		BAC8A9E61EB58F0D005270DD /* mapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC8A9E51EB58F0D005270DD /* mapController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		BAC8A9CF1EB53970005270DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAC8A9D21EB53970005270DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAC8A9D41EB53970005270DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAC8A9DD1EB5868E005270DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BAC8A9E31EB58CFC005270DD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BAC8A9E51EB58F0D005270DD /* mapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mapController.swift; path = ../mapController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC8A9E41EB58CFC005270DD /* MapKit.framework in Frameworks */,
+				BAC8A9DE1EB5868E005270DD /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 			children = (
 				BAC8A9C71EB53970005270DD /* NASA */,
 				BAC8A9C61EB53970005270DD /* Products */,
+				BAC8A9DC1EB5868E005270DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +63,7 @@
 		BAC8A9C71EB53970005270DD /* NASA */ = {
 			isa = PBXGroup;
 			children = (
+				BAC8A9E51EB58F0D005270DD /* mapController.swift */,
 				BAC8A9C81EB53970005270DD /* AppDelegate.swift */,
 				BAC8A9CA1EB53970005270DD /* ViewController.swift */,
 				BAC8A9CC1EB53970005270DD /* Main.storyboard */,
@@ -62,6 +72,15 @@
 				BAC8A9D41EB53970005270DD /* Info.plist */,
 			);
 			path = NASA;
+			sourceTree = "<group>";
+		};
+		BAC8A9DC1EB5868E005270DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAC8A9E31EB58CFC005270DD /* MapKit.framework */,
+				BAC8A9DD1EB5868E005270DD /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +115,7 @@
 				TargetAttributes = {
 					BAC8A9C41EB53970005270DD = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = U47XPGS9CK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +158,7 @@
 			files = (
 				BAC8A9CB1EB53970005270DD /* ViewController.swift in Sources */,
 				BAC8A9C91EB53970005270DD /* AppDelegate.swift in Sources */,
+				BAC8A9E61EB58F0D005270DD /* mapController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U47XPGS9CK;
 				INFOPLIST_FILE = NASA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wssj2.NASA;
@@ -274,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U47XPGS9CK;
 				INFOPLIST_FILE = NASA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wssj2.NASA;
@@ -301,6 +324,7 @@
 				BAC8A9D91EB53970005270DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
