@@ -31,7 +31,7 @@ class mapViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
-        let siteURL = URL(string: "https://pt.wikipedia.org/wiki/Columba_livia")
+        let siteURL = URL(string: "https://en.wikipedia.org/wiki/Short-billed_dowitcher")
         let siteURLRequest = URLRequest(url: siteURL!)
         webView.loadRequest(siteURLRequest)
         
