@@ -15,6 +15,7 @@
 		BAC8A9DE1EB5868E005270DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC8A9DD1EB5868E005270DD /* CoreLocation.framework */; };
 		BAC8A9E41EB58CFC005270DD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC8A9E31EB58CFC005270DD /* MapKit.framework */; };
 		BAC8A9E61EB58F0D005270DD /* mapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC8A9E51EB58F0D005270DD /* mapController.swift */; };
+		BAC8A9E81EB5CA1F005270DD /* wind_map.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC8A9E71EB5CA1F005270DD /* wind_map.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BAC8A9DD1EB5868E005270DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BAC8A9E31EB58CFC005270DD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BAC8A9E51EB58F0D005270DD /* mapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mapController.swift; path = ../mapController.swift; sourceTree = "<group>"; };
+		BAC8A9E71EB5CA1F005270DD /* wind_map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wind_map.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				BAC8A9C81EB53970005270DD /* AppDelegate.swift */,
 				BAC8A9CA1EB53970005270DD /* ViewController.swift */,
 				BAC8A9CC1EB53970005270DD /* Main.storyboard */,
+				BAC8A9E71EB5CA1F005270DD /* wind_map.swift */,
 				BAC8A9CF1EB53970005270DD /* Assets.xcassets */,
 				BAC8A9D11EB53970005270DD /* LaunchScreen.storyboard */,
 				BAC8A9D41EB53970005270DD /* Info.plist */,
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC8A9E81EB5CA1F005270DD /* wind_map.swift in Sources */,
 				BAC8A9CB1EB53970005270DD /* ViewController.swift in Sources */,
 				BAC8A9C91EB53970005270DD /* AppDelegate.swift in Sources */,
 				BAC8A9E61EB58F0D005270DD /* mapController.swift in Sources */,

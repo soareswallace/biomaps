@@ -27,7 +27,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let imageData = UIImageJPEGRepresentation(pickedImage.image!, 0.6)
         let compressedJPEGImage = UIImage(data: imageData!)
         UIImageWriteToSavedPhotosAlbum(compressedJPEGImage!, nil, nil, nil)
-        UIApplication.shared.open(NSURL(string:"https://earth.nullschool.net/pt/#current/wind/isobaric/500hPa/orthographic=-48.37,-1.98,302/loc=-20.173,-17.879")! as URL, options: [:], completionHandler: nil)
         
     }
     
